@@ -1,0 +1,62 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --card-background-color: #f1e7e7;
+    --toggle-background: rgb(4, 52, 27);
+}
+
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #fff;
+    --card-background-color: #1e1e1e;
+    --toggle-background: #f4f4f4;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.theme-toggle {
+    padding: 20px;
+    text-align: right;
+}
+
+.toggle-label {
+    background-color: var(--card-background-color);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: var(--text-color);
+    user-select: none;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--card-background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(255, 251, 251);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
