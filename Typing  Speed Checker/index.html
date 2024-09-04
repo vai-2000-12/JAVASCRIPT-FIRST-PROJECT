@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="openModalButton" class="open-modal-button">Start The Typing Test</button>
+    <div class="modal" id="typingSpeedModal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h2>Typing Speed Test</h2>
+            <div class="theme-toggle">
+                <button id="toggleTheme">Light-Mode</button>
+            </div>
+            <div class="test-area">
+                <p id="textToType">
+                    The quick brown fox jumps over the lazy dog.
+                </p>
+                <textarea id="userInput" placeholder="Start typing here..."></textarea>
+                <div class="result">
+                    <p>Time: <span id="timeElapsed">0</span> seconds</p>
+                    <p>Words per minute: <span id="wpm">0</span></p>
+                    <p>Mistakes:<span id="mistakes">0</span></p>
+                </div>
+                <button id="restartTest">Restart Test</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
